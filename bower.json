@@ -1,0 +1,10 @@
+{
+  "name": "bower-sinon",
+  "version": "1.7.3",
+  "homepage": "https://github.com/billysbilling/bower-sinon",
+  "authors": [
+    "Christian Johansen, christian@cjohansen.no"
+  ],
+  "main": "sinon.js",
+  "license": "BSD"
+}
