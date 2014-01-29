@@ -33,6 +33,10 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+//[sebastianseilund] Added this to make Sinon not think it's running under Node.js
+(function() {
+var require = null;
+
 this.sinon = (function () {
 var buster = (function (setTimeout, B) {
     var isNode = typeof require == "function" && typeof module == "object";
@@ -4288,3 +4292,6 @@ if (typeof module == "object" && typeof require == "function") {
 }(typeof sinon == "object" && sinon || null, typeof window != "undefined" ? window : (typeof self != "undefined") ? self : global));
 
 return sinon;}.call(typeof window != 'undefined' && window || {}));
+
+//[sebastianseilund] Added this to make Sinon not think it's running under Node.js
+})();
