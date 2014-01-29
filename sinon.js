@@ -4294,4 +4294,5 @@ if (typeof module == "object" && typeof require == "function") {
 return sinon;}.call(typeof window != 'undefined' && window || {}));
 
 //[sebastianseilund] Added this to make Sinon not think it's running under Node.js
+module.exports = sinon;
 })();
